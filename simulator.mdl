@@ -1,0 +1,3520 @@
+Model {
+  Name			  "simulator"
+  Version		  8.4
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ISO-8859-1"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.336"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [1440.0, 23.0, 1920.0, 1177.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1886.0, 1007.0]
+	ZoomFactor		[0.8]
+	Offset			[2.5, 2.5000000000000568]
+      }
+    }
+  }
+  Created		  "Mon Dec 08 11:55:54 2014"
+  Creator		  "williammortl"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "williammortl"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Feb 09 15:45:02 2015"
+  RTWModifiedTimeStamp	  345397488
+  ModelVersionFormat	  "1.%<AutoIncrement:336>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    6
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "simulator"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "simulator"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  CovSFcnEnable		  off
+  CovBoundaryAbsTol	  0.000010
+  CovBoundaryRelTol	  0.010000
+  CovUseTimeInterval	  off
+  CovStartTime		  0
+  CovStopTime		  0
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.14.3"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.14.3"
+	  StartTime		  "0.0"
+	  StopTime		  "2880"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.14.3"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.14.3"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseDivisionForNetSlopeComputation "Off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.14.3"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Simplified"
+	  MergeDetectMultiDrivingBlocksExec "error"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  IntegerSaturationMsg	  "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.14.3"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.14.3"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  14
+	  Version		  "1.14.3"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.14.3"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  ""
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.14.3"
+	      Array {
+		Type			"Cell"
+		Dimension		24
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"ParameterTuningSideEffectCode"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.14.3"
+	      Array {
+		Type			"Cell"
+		Dimension		13
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      GenerateSharedConstants on
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 180, 130, 1260, 770 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    18
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      ActionPort
+      InitializeStates	      "held"
+      PropagateVarSize	      "Only when execution is resumed"
+      ActionType	      "unset"
+    }
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      Lockdown		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Merge
+      Inputs		      "2"
+      InitialOutput	      "[]"
+      AllowUnequalInputPortWidths off
+      InputPortOffsets	      "[]"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RandomNumber
+      Mean		      "0"
+      Variance		      "1"
+      Seed		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      SwitchCase
+      CaseConditions	      "{1}"
+      ShowDefaultCase	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToFile
+      Filename		      "untitled.mat"
+      MatrixName	      "ans"
+      SaveFormat	      "Array"
+      Decimation	      "1"
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "simulator"
+    Location		    [1440, 23, 3360, 1200]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "80"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "315"
+    Block {
+      BlockType		      Abs
+      Name		      "Abs"
+      SID		      "118"
+      Position		      [165, 185, 195, 215]
+      ZOrder		      57
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Add"
+      SID		      "35"
+      Ports		      [2, 1]
+      Position		      [165, 297, 195, 328]
+      ZOrder		      29
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Artificial Pancreas"
+      SID		      "78"
+      Ports		      [3, 1]
+      Position		      [1280, 451, 1380, 569]
+      ZOrder		      44
+      BackgroundColor	      "magenta"
+      SystemSampleTime	      "1"
+      RequestExecContextInheritance off
+      System {
+	Name			"Artificial Pancreas"
+	Location		[1440, 23, 3360, 1200]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"80"
+	Block {
+	  BlockType		  Inport
+	  Name			  "glucose"
+	  SID			  "79"
+	  Position		  [165, 193, 195, 207]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "time"
+	  SID			  "81"
+	  Position		  [165, 228, 195, 242]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "meal_times"
+	  SID			  "268"
+	  Position		  [165, 568, 195, 582]
+	  ZOrder		  39
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Assignment 5 Controller"
+	  SID			  "136"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [820, 405, 965, 485]
+	  ZOrder		  12
+	  BackgroundColor	  "darkGreen"
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Assignment 5 Controller"
+	    Location		    [0, 23, 1440, 828]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "137"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "glucose"
+	      SID		      "250"
+	      Position		      [105, 148, 135, 162]
+	      ZOrder		      39
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "138"
+	      Position		      [450, 30, 509, 58]
+	      ZOrder		      -2
+	      ActionType	      "case"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      "251"
+	      Ports		      [2, 1]
+	      Position		      [370, 222, 400, 253]
+	      ZOrder		      45
+	      Inputs		      "+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      SID		      "254"
+	      Position		      [280, 265, 310, 295]
+	      ZOrder		      46
+	      Value		      "3"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "High or lower glucose level?"
+	      SID		      "256"
+	      Position		      [775, 135, 825, 175]
+	      ZOrder		      40
+	      Threshold		      "8"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Large Insulin Bolus"
+	      SID		      "252"
+	      Position		      [280, 80, 310, 110]
+	      ZOrder		      41
+	      Value		      "125/3"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Low or medium glucose level?"
+	      SID		      "257"
+	      Position		      [600, 330, 650, 370]
+	      ZOrder		      42
+	      Criteria		      "u2 > Threshold"
+	      Threshold		      "4"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      SID		      "255"
+	      Ports		      [2, 1]
+	      Position		      [465, 272, 495, 303]
+	      ZOrder		      44
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Smaller Insulin Bolus"
+	      SID		      "253"
+	      Position		      [280, 405, 310, 435]
+	      ZOrder		      43
+	      Value		      "25/3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "insulin"
+	      SID		      "258"
+	      Position		      [870, 148, 900, 162]
+	      ZOrder		      38
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      75
+	      SrcBlock		      "Large Insulin Bolus"
+	      SrcPort		      1
+	      Points		      [331, 0; 0, 45]
+	      DstBlock		      "High or lower glucose level?"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      82
+	      SrcBlock		      "glucose"
+	      SrcPort		      1
+	      Points		      [92, 0]
+	      Branch {
+		ZOrder			79
+		Points			[0, 195]
+		DstBlock		"Low or medium glucose level?"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			78
+		Points			[61, 0]
+		Branch {
+		  ZOrder		  77
+		  Points		  [0, 75]
+		  DstBlock		  "Add"
+		  DstPort		  1
+		}
+		Branch {
+		  ZOrder		  76
+		  DstBlock		  "High or lower glucose level?"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      85
+	      SrcBlock		      "High or lower glucose level?"
+	      SrcPort		      1
+	      DstBlock		      "insulin"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      88
+	      SrcBlock		      "Smaller Insulin Bolus"
+	      SrcPort		      1
+	      Points		      [94, 0]
+	      Branch {
+		ZOrder			93
+		Points			[64, 0; 0, -55]
+		DstBlock		"Low or medium glucose level?"
+		DstPort			3
+	      }
+	      Branch {
+		ZOrder			86
+		Points			[0, -125]
+		DstBlock		"Product"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      ZOrder		      89
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 45]
+	      DstBlock		      "Low or medium glucose level?"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      90
+	      SrcBlock		      "Low or medium glucose level?"
+	      SrcPort		      1
+	      Points		      [58, 0; 0, -180]
+	      DstBlock		      "High or lower glucose level?"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      91
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      Points		      [41, 0; 0, -35]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      92
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      Points		      [28, 0; 0, 40]
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      SID		      "159"
+	      Name		      "This is the controller which was given in assignment #5 of the couse"
+	      Position		      [358, 5, 660, 17]
+	      InternalMargins	      [0, 0, 0, 0]
+	      FixedHeight	      off
+	      FixedWidth	      off
+	      HorizontalAlignment     "left"
+	      VerticalAlignment	      "top"
+	      ZOrder		      -1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "183"
+	  Ports			  [3, 1]
+	  Position		  [1175, 489, 1230, 561]
+	  ZOrder		  36
+	  Inputs		  "3"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "No Controller"
+	  SID			  "129"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [970, 295, 1115, 375]
+	  ZOrder		  8
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "No Controller"
+	    Location		    [0, 23, 1440, 833]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "131"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	      ActionType	      "case"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "122"
+	      Position		      [125, 120, 155, 150]
+	      ZOrder		      9
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "insulin"
+	      SID		      "121"
+	      Position		      [240, 128, 270, 142]
+	      ZOrder		      7
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "insulin"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Plugin Controller"
+	  SID			  "263"
+	  Ports			  [3, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [650, 510, 795, 590]
+	  ZOrder		  38
+	  BackgroundColor	  "darkGreen"
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Plugin Controller"
+	    Location		    [0, 23, 1440, 828]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "glucose"
+	      SID		      "276"
+	      Position		      [60, 313, 90, 327]
+	      ZOrder		      10
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "time"
+	      SID		      "277"
+	      Position		      [60, 248, 90, 262]
+	      ZOrder		      11
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "meal_times"
+	      SID		      "278"
+	      Position		      [60, 183, 90, 197]
+	      ZOrder		      12
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "264"
+	      Position		      [325, 15, 384, 43]
+	      ZOrder		      -2
+	      ActionType	      "case"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "Call controllerFunction"
+	      SID		      "290"
+	      Ports		      [1, 1]
+	      Position		      [320, 240, 390, 270]
+	      ZOrder		      78
+	      MATLABFcn		      "controllerFunction(u(1), u(2), u(3), u(4), u(5))"
+	      OutputDimensions	      "1"
+	      Output1D		      off
+	      SampleTime	      "1"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "288"
+	      Ports		      [3, 1]
+	      Position		      [180, 156, 185, 354]
+	      ZOrder		      14
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ui"
+	      SID		      "289"
+	      Position		      [545, 248, 575, 262]
+	      ZOrder		      15
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "meal_times"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "time"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "glucose"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Call controllerFunction"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Call controllerFunction"
+	      SrcPort		      1
+	      DstBlock		      "ui"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "SWITCH_ARTIFICIAL_PANCREAS"
+	  SID			  "126"
+	  Position		  [165, 310, 195, 340]
+	  ZOrder		  5
+	  Value			  "SWITCH_ARTIFICIAL_PANCREAS"
+	}
+	Block {
+	  BlockType		  SwitchCase
+	  Name			  "Switch Artificial Pancreas based\nupon SWITCH_ARTIFICIAL_PANCREAS "
+	  SID			  "128"
+	  Ports			  [1, 3]
+	  Position		  [280, 255, 380, 395]
+	  ZOrder		  7
+	  CaseConditions	  "{0, 1, 2}"
+	  ShowDefaultCase	  off
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "ui"
+	  SID			  "80"
+	  Position		  [1475, 518, 1505, 532]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "SWITCH_ARTIFICIAL_PANCREAS"
+	  SrcPort		  1
+	  DstBlock		  "Switch Artificial Pancreas based\nupon SWITCH_ARTIFICIAL_PANCREAS "
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Switch Artificial Pancreas based\nupon SWITCH_ARTIFICIAL_PANCREAS "
+	  SrcPort		  1
+	  DstBlock		  "No Controller"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Switch Artificial Pancreas based\nupon SWITCH_ARTIFICIAL_PANCREAS "
+	  SrcPort		  2
+	  Points		  [505, 0]
+	  DstBlock		  "Assignment 5 Controller"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  80
+	  SrcBlock		  "Assignment 5 Controller"
+	  SrcPort		  1
+	  Points		  [88, 0; 0, 80]
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  68
+	  SrcBlock		  "No Controller"
+	  SrcPort		  1
+	  Points		  [21, 0; 0, 165]
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  70
+	  SrcBlock		  "glucose"
+	  SrcPort		  1
+	  Points		  [372, 0]
+	  Branch {
+	    ZOrder		    193
+	    Points		    [208, 0; 0, 245]
+	    DstBlock		    "Assignment 5 Controller"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    121
+	    Points		    [0, 325]
+	    DstBlock		    "Plugin Controller"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  145
+	  SrcBlock		  "Plugin Controller"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  146
+	  SrcBlock		  "Switch Artificial Pancreas based\nupon SWITCH_ARTIFICIAL_PANCREAS "
+	  SrcPort		  3
+	  Points		  [335, 0]
+	  DstBlock		  "Plugin Controller"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  108
+	  SrcBlock		  "time"
+	  SrcPort		  1
+	  Points		  [330, 0; 0, 315]
+	  DstBlock		  "Plugin Controller"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  101
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "ui"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  126
+	  SrcBlock		  "meal_times"
+	  SrcPort		  1
+	  DstBlock		  "Plugin Controller"
+	  DstPort		  3
+	}
+	Annotation {
+	  SID			  "188"
+	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
+	  "><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</styl"
+	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
+	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
+	  " style=\" font-size:10px;\">This subsystem switches what artificial pancreas controller is being utilized.</span></"
+	  "p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-"
+	  "block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; marg"
+	  "in-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weight:600;\">DARK GREEN</"
+	  "span><span style=\" font-size:10px;\"> - controllers for the artificial pancres</span></p>\n<p style=\"-qt-paragrap"
+	  "h-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent"
+	  ":0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-ind"
+	  "ent:0; text-indent:0px;\"><span style=\" font-size:10px; text-decoration: underline;\">SWITCH_ARTIFICIAL_PANCREAS V"
+	  "alues:</span></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+	  "right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin"
+	  "-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weight:600;"
+	  "\">0</span><span style=\" font-size:10px;\"> - No controller</span></p>\n<p style=\" margin-top:0px; margin-bottom:"
+	  "0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-"
+	  "weight:600;\">1</span><span style=\" font-size:10px;\"> - Controller from Assignment #5</span></p>\n<p style=\" mar"
+	  "gin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span sty"
+	  "le=\" font-size:10px; font-weight:600;\">2</span><span style=\" font-size:10px;\"> - Plugin Controller (varies, set"
+	  " by controllerFunction)</span></p></body></html>"
+	  Position		  [1175, 359, 1509, 451]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  Interpreter		  "rich"
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      SID		      "47"
+      Position		      [60, 500, 80, 520]
+      ZOrder		      41
+      BackgroundColor	      "magenta"
+      NamePlacement	      "alternate"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      SID		      "40"
+      Ports		      [1, 6]
+      Position		      [505, 195, 510, 435]
+      ZOrder		      34
+      ShowName		      off
+      Outputs		      "6"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      ToFile
+      Name		      "Glucose Data File"
+      SID		      "191"
+      Ports		      [1]
+      Position		      [1500, 415, 1590, 445]
+      ZOrder		      59
+      BackgroundColor	      "[0.909804, 0.819608, 0.321569]"
+      Filename		      "DataFile.mat"
+      SampleTime	      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Ins-Glu Response\nBergman Minimal Model"
+      SID		      "53"
+      Ports		      [2, 1]
+      Position		      [950, 324, 1050, 366]
+      ZOrder		      42
+      BackgroundColor	      "magenta"
+      SystemSampleTime	      "1"
+      RequestExecContextInheritance off
+      System {
+	Name			"Ins-Glu Response\nBergman Minimal Model"
+	Location		[1376, 23, 2816, 830]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"80"
+	Block {
+	  BlockType		  Inport
+	  Name			  "ug"
+	  SID			  "54"
+	  Position		  [95, 303, 125, 317]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ui"
+	  SID			  "55"
+	  Position		  [95, 663, 125, 677]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  SID			  "56"
+	  Ports			  [3, 1]
+	  Position		  [660, 244, 690, 276]
+	  ZOrder		  6
+	  Inputs		  "--+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add1"
+	  SID			  "57"
+	  Ports			  [2, 1]
+	  Position		  [300, 246, 330, 279]
+	  ZOrder		  9
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add2"
+	  SID			  "58"
+	  Ports			  [2, 1]
+	  Position		  [660, 416, 690, 449]
+	  ZOrder		  11
+	  Inputs		  "-+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add3"
+	  SID			  "59"
+	  Ports			  [2, 1]
+	  Position		  [660, 626, 690, 659]
+	  ZOrder		  15
+	  Inputs		  "-+"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add4"
+	  SID			  "60"
+	  Ports			  [2, 1]
+	  Position		  [300, 526, 330, 559]
+	  ZOrder		  17
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Basal Insulin"
+	  SID			  "63"
+	  Position		  [160, 535, 190, 565]
+	  ZOrder		  18
+	  Value			  "IB"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide"
+	  SID			  "65"
+	  Ports			  [2, 1]
+	  Position		  [445, 662, 475, 693]
+	  ZOrder		  19
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "G"
+	  SID			  "66"
+	  Ports			  [1, 1]
+	  Position		  [735, 245, 765, 275]
+	  ZOrder		  2
+	  InitialCondition	  "G0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Glucose Basal"
+	  SID			  "61"
+	  Position		  [160, 255, 190, 285]
+	  ZOrder		  10
+	  Value			  "GB"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "I"
+	  SID			  "70"
+	  Ports			  [1, 1]
+	  Position		  [735, 630, 765, 660]
+	  ZOrder		  4
+	  InitialCondition	  "I0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "N"
+	  SID			  "62"
+	  Position		  [160, 605, 190, 635]
+	  ZOrder		  16
+	  Value			  "N"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "P1"
+	  SID			  "67"
+	  Position		  [445, 145, 475, 175]
+	  ZOrder		  7
+	  Gain			  "P1"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "P2"
+	  SID			  "68"
+	  Position		  [445, 380, 475, 410]
+	  ZOrder		  12
+	  Gain			  "P2"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "P3"
+	  SID			  "69"
+	  Position		  [445, 450, 475, 480]
+	  ZOrder		  13
+	  Gain			  "P3"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  "71"
+	  Ports			  [2, 1]
+	  Position		  [445, 242, 475, 273]
+	  ZOrder		  8
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  SID			  "72"
+	  Ports			  [2, 1]
+	  Position		  [445, 597, 475, 628]
+	  ZOrder		  14
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "VI"
+	  SID			  "64"
+	  Position		  [160, 700, 190, 730]
+	  ZOrder		  20
+	  Value			  "VI"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "X"
+	  SID			  "73"
+	  Ports			  [1, 1]
+	  Position		  [735, 420, 765, 450]
+	  ZOrder		  3
+	  InitialCondition	  "X0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "glucose"
+	  SID			  "74"
+	  Position		  [855, 253, 885, 267]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "G"
+	  SrcPort		  1
+	  Points		  [43, 0]
+	  Branch {
+	    ZOrder		    108
+	    DstBlock		    "glucose"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    2
+	    Points		    [0, -131]
+	    Branch {
+	      ZOrder		      107
+	      Points		      [0, -27; -589, 0; 0, 153]
+	      DstBlock		      "Add1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      4
+	      Points		      [-400, 0; 0, 31]
+	      DstBlock		      "P1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Add"
+	  SrcPort		  1
+	  DstBlock		  "G"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "P1"
+	  SrcPort		  1
+	  Points		  [68, 0; 0, 90]
+	  DstBlock		  "Add"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "X"
+	  SrcPort		  1
+	  Points		  [49, 0; 0, -90; -309, 0]
+	  Branch {
+	    ZOrder		    29
+	    Points		    [0, -144; -97, 0; 0, 49]
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    10
+	    Points		    [-97, 0; 0, 50]
+	    DstBlock		    "P2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Add"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "Add1"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "Glucose Basal"
+	  SrcPort		  1
+	  DstBlock		  "Add1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "ug"
+	  SrcPort		  1
+	  Points		  [483, 0; 0, -40]
+	  DstBlock		  "Add"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "Add2"
+	  SrcPort		  1
+	  DstBlock		  "X"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "P2"
+	  SrcPort		  1
+	  Points		  [65, 0; 0, 30]
+	  DstBlock		  "Add2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "P3"
+	  SrcPort		  1
+	  Points		  [65, 0; 0, -25]
+	  DstBlock		  "Add2"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "Add3"
+	  SrcPort		  1
+	  DstBlock		  "I"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  19
+	  SrcBlock		  "N"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [106, 0; 0, 20]
+	  DstBlock		  "Add3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  21
+	  SrcBlock		  "Add4"
+	  SrcPort		  1
+	  Points		  [80, 0; 0, 60]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  22
+	  SrcBlock		  "I"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, -135; -406, 0]
+	  Branch {
+	    ZOrder		    62
+	    Points		    [-182, 0; 0, 25]
+	    DstBlock		    "Add4"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    32
+	    Points		    [0, -45]
+	    DstBlock		    "P3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  25
+	  SrcBlock		  "Basal Insulin"
+	  SrcPort		  1
+	  DstBlock		  "Add4"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  26
+	  SrcBlock		  "Divide"
+	  SrcPort		  1
+	  Points		  [106, 0; 0, -30]
+	  DstBlock		  "Add3"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  27
+	  SrcBlock		  "ui"
+	  SrcPort		  1
+	  DstBlock		  "Divide"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  28
+	  SrcBlock		  "VI"
+	  SrcPort		  1
+	  Points		  [220, 0; 0, -30]
+	  DstBlock		  "Divide"
+	  DstPort		  2
+	}
+	Annotation {
+	  SID			  "116"
+	  Name			  "This subsystem implements the Bergman Minimal Model"
+	  Position		  [403, 72, 655, 84]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Meal Data"
+      SID		      "113"
+      Ports		      [1]
+      Position		      [500, 135, 980, 165]
+      ZOrder		      54
+      BackgroundColor	      "yellow"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      Name		      "Meal Data Generator"
+      SID		      "11"
+      Ports		      [1, 1]
+      Position		      [335, 300, 405, 330]
+      ZOrder		      15
+      BackgroundColor	      "green"
+      MATLABFcn		      "mealFunction(u(1), u(2), u(3))"
+      OutputDimensions	      "6"
+      SampleTime	      "1440"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Meal Glucos Appearing in the Blood"
+      SID		      "12"
+      Ports		      [7, 1]
+      Position		      [635, 195, 845, 475]
+      ZOrder		      16
+      BackgroundColor	      "magenta"
+      TreatAsAtomicUnit	      on
+      SystemSampleTime	      "1"
+      RequestExecContextInheritance off
+      System {
+	Name			"Meal Glucos Appearing in the Blood"
+	Location		[1376, 23, 2816, 830]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"80"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Breakfast Time"
+	  SID			  "13"
+	  Position		  [20, 413, 50, 427]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Breakfast Size"
+	  SID			  "14"
+	  Position		  [20, 453, 50, 467]
+	  ZOrder		  1
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lunch Time"
+	  SID			  "49"
+	  Position		  [20, 493, 50, 507]
+	  ZOrder		  10
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Lunch Size"
+	  SID			  "50"
+	  Position		  [20, 533, 50, 547]
+	  ZOrder		  11
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Dinner Time"
+	  SID			  "51"
+	  Position		  [20, 573, 50, 587]
+	  ZOrder		  12
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Dinner Size"
+	  SID			  "52"
+	  Position		  [20, 613, 50, 627]
+	  ZOrder		  13
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Current Time"
+	  SID			  "15"
+	  Position		  [295, 208, 325, 222]
+	  ZOrder		  3
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add2"
+	  SID			  "102"
+	  Ports			  [3, 1]
+	  Position		  [890, 329, 920, 391]
+	  ZOrder		  19
+	  Inputs		  "+++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "302"
+	  Ports			  [1, 3]
+	  Position		  [380, 243, 385, 457]
+	  ZOrder		  39
+	  ShowName		  off
+	  Outputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "MEAL_BYPASS"
+	  SID			  "301"
+	  Position		  [150, 335, 180, 365]
+	  ZOrder		  38
+	  Value			  "MEAL_BYPASS"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "MEAL_B_CARBS"
+	  SID			  "294"
+	  Position		  [20, 75, 50, 105]
+	  ZOrder		  31
+	  Value			  "MEAL_B_CARBS"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "MEAL_B_TIME"
+	  SID			  "293"
+	  Position		  [20, 25, 50, 55]
+	  ZOrder		  30
+	  Value			  "MEAL_B_TIME"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "MEAL_D_CARBS"
+	  SID			  "298"
+	  Position		  [20, 275, 50, 305]
+	  ZOrder		  35
+	  Value			  "MEAL_D_CARBS"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "MEAL_D_TIME"
+	  SID			  "297"
+	  Position		  [20, 225, 50, 255]
+	  ZOrder		  34
+	  Value			  "MEAL_D_TIME"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "MEAL_L_CARBS"
+	  SID			  "296"
+	  Position		  [20, 175, 50, 205]
+	  ZOrder		  33
+	  Value			  "MEAL_L_CARBS"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "MEAL_L_TIME"
+	  SID			  "295"
+	  Position		  [20, 125, 50, 155]
+	  ZOrder		  32
+	  Value			  "MEAL_L_TIME"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "292"
+	  Ports			  [6, 1]
+	  Position		  [130, 400, 135, 640]
+	  ZOrder		  29
+	  ShowName		  off
+	  Inputs		  "6"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  SID			  "299"
+	  Ports			  [6, 1]
+	  Position		  [130, 19, 135, 311]
+	  ZOrder		  36
+	  ShowName		  off
+	  Inputs		  "6"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux2"
+	  SID			  "303"
+	  Ports			  [2, 1]
+	  Position		  [595, 271, 600, 309]
+	  ZOrder		  40
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux3"
+	  SID			  "304"
+	  Ports			  [2, 1]
+	  Position		  [595, 341, 600, 379]
+	  ZOrder		  41
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux4"
+	  SID			  "306"
+	  Ports			  [2, 1]
+	  Position		  [595, 411, 600, 449]
+	  ZOrder		  43
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch based upon\nMEAL_BYPASS"
+	  SID			  "300"
+	  Position		  [285, 330, 335, 370]
+	  ZOrder		  37
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "breakfast ug"
+	  SID			  "111"
+	  Ports			  [1, 1]
+	  Position		  [690, 275, 760, 305]
+	  ZOrder		  28
+	  MATLABFcn		  "mealAbsorption(u(1), u(2), u(3))"
+	  OutputDimensions	  "1"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "dinner ug"
+	  SID			  "99"
+	  Ports			  [1, 1]
+	  Position		  [690, 415, 760, 445]
+	  ZOrder		  16
+	  MATLABFcn		  "mealAbsorption(u(1), u(2), u(3))"
+	  OutputDimensions	  "1"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "lunch ug"
+	  SID			  "108"
+	  Ports			  [1, 1]
+	  Position		  [690, 345, 760, 375]
+	  ZOrder		  25
+	  MATLABFcn		  "mealAbsorption(u(1), u(2), u(3))"
+	  OutputDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "ug"
+	  SID			  "21"
+	  Position		  [975, 353, 1005, 367]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  22
+	  SrcBlock		  "dinner ug"
+	  SrcPort		  1
+	  Points		  [78, 0; 0, -50]
+	  DstBlock		  "Add2"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  30
+	  SrcBlock		  "lunch ug"
+	  SrcPort		  1
+	  DstBlock		  "Add2"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  42
+	  SrcBlock		  "breakfast ug"
+	  SrcPort		  1
+	  Points		  [78, 0; 0, 50]
+	  DstBlock		  "Add2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  43
+	  SrcBlock		  "Add2"
+	  SrcPort		  1
+	  DstBlock		  "ug"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  78
+	  SrcBlock		  "Breakfast Time"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  79
+	  SrcBlock		  "Breakfast Size"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  80
+	  SrcBlock		  "Lunch Time"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  82
+	  SrcBlock		  "Lunch Size"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  83
+	  SrcBlock		  "Dinner Time"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  84
+	  SrcBlock		  "Dinner Size"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  85
+	  SrcBlock		  "MEAL_B_TIME"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  86
+	  SrcBlock		  "MEAL_B_CARBS"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  87
+	  SrcBlock		  "MEAL_L_TIME"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  88
+	  SrcBlock		  "MEAL_L_CARBS"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  89
+	  SrcBlock		  "MEAL_D_TIME"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  90
+	  SrcBlock		  "MEAL_D_CARBS"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  91
+	  SrcBlock		  "MEAL_BYPASS"
+	  SrcPort		  1
+	  DstBlock		  "Switch based upon\nMEAL_BYPASS"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  92
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  Points		  [99, 0; 0, 170]
+	  DstBlock		  "Switch based upon\nMEAL_BYPASS"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  93
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  Points		  [99, 0; 0, -155]
+	  DstBlock		  "Switch based upon\nMEAL_BYPASS"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  94
+	  SrcBlock		  "Switch based upon\nMEAL_BYPASS"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  95
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "Mux2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  97
+	  SrcBlock		  "Current Time"
+	  SrcPort		  1
+	  Points		  [160, 0; 0, 85]
+	  Branch {
+	    ZOrder		    100
+	    Points		    [0, 70]
+	    Branch {
+	      ZOrder		      104
+	      Points		      [0, 70]
+	      DstBlock		      "Mux4"
+	      DstPort		      2
+	    }
+	    Branch {
+	      ZOrder		      103
+	      DstBlock		      "Mux3"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    ZOrder		    99
+	    DstBlock		    "Mux2"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  98
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "Mux3"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  102
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  DstBlock		  "Mux4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  106
+	  SrcBlock		  "Mux2"
+	  SrcPort		  1
+	  DstBlock		  "breakfast ug"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  107
+	  SrcBlock		  "Mux3"
+	  SrcPort		  1
+	  DstBlock		  "lunch ug"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  108
+	  SrcBlock		  "Mux4"
+	  SrcPort		  1
+	  DstBlock		  "dinner ug"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "115"
+	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
+	  "><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</styl"
+	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
+	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
+	  " style=\" font-size:10px;\">This subsystem takes in meal data and then determines how much glucose is release in th"
+	  "e blood stream.</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-b"
+	  "lock-indent:0; text-indent:0px;\"><span style=\" font-size:10px;\">The manner of calculation allows for overlapping"
+	  " meals.</span></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin"
+	  "-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margi"
+	  "n-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; text-decoration"
+	  ": underline;\">MEAL_BYPASS values:</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; marg"
+	  "in-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weight:600;\">0</span><spa"
+	  "n style=\" font-size:10px;\"> - use the generated values</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px;"
+	  " margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weig"
+	  "ht:600;\">1</span><span style=\" font-size:10px;\"> - use the values contained in simulator_setup.m instead</span><"
+	  "/p></body></html>"
+	  Position		  [305, 64, 775, 126]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  Interpreter		  "rich"
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Min Age"
+      SID		      "37"
+      Position		      [55, 335, 85, 365]
+      ZOrder		      31
+      Value		      "MIN_AGE"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "29"
+      Ports		      [3, 1]
+      Position		      [250, 145, 255, 485]
+      ZOrder		      23
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      SID		      "231"
+      Ports		      [3, 1]
+      Position		      [1465, 363, 1470, 497]
+      ZOrder		      67
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      SID		      "267"
+      Ports		      [3, 1]
+      Position		      [740, 523, 745, 577]
+      ZOrder		      68
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Noisy g"
+      SID		      "202"
+      Ports		      [1]
+      Position		      [1315, 269, 1345, 301]
+      ZOrder		      64
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [5, 73, 1437, 828]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      YMin		      "-20"
+      YMax		      "120"
+      SaveName		      "ScopeData2"
+      LimitDataPoints	      off
+      ScrollMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Noisy g readback"
+      SID		      "315"
+      Ports		      [1]
+      Position		      [1285, 330, 1375, 360]
+      ZOrder		      69
+      BackgroundColor	      "yellow"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Person Data"
+      SID		      "39"
+      Ports		      [1]
+      Position		      [330, 167, 415, 253]
+      ZOrder		      33
+      BackgroundColor	      "yellow"
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Random Age"
+      SID		      "36"
+      Ports		      [0, 1]
+      Position		      [30, 263, 110, 307]
+      ZOrder		      30
+      BackgroundColor	      "lightBlue"
+      LibraryVersion	      "1.112"
+      FontName		      "Arial"
+      SourceBlock	      "commrandsrc2/Random Integer\nGenerator"
+      SourceType	      "Random Integer Generator"
+      ContentPreviewEnabled   off
+      mul		      "MAX_AGE - MIN_AGE"
+      seed		      "randi(777)"
+      Ts		      "flintmax"
+      frameBased	      off
+      sampPerFrame	      "1"
+      orient		      off
+      outDataType	      "double"
+    }
+    Block {
+      BlockType		      RandomNumber
+      Name		      "Random BMI"
+      SID		      "38"
+      Position		      [55, 415, 85, 445]
+      ZOrder		      32
+      BackgroundColor	      "lightBlue"
+      Mean		      "MEAN_BMI"
+      Variance		      "5"
+      SampleTime	      "flintmax"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Random Gender"
+      SID		      "34"
+      Ports		      [0, 1]
+      Position		      [30, 178, 110, 222]
+      ZOrder		      28
+      BackgroundColor	      "lightBlue"
+      LibraryVersion	      "1.112"
+      FontName		      "Arial"
+      SourceBlock	      "commrandsrc2/Random Integer\nGenerator"
+      SourceType	      "Random Integer Generator"
+      ContentPreviewEnabled   off
+      mul		      "2"
+      seed		      "randi(777)"
+      Ts		      "flintmax"
+      frameBased	      off
+      sampPerFrame	      "1"
+      orient		      off
+      outDataType	      "double"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Sensor Noise"
+      SID		      "75"
+      Ports		      [1, 1]
+      Position		      [1115, 324, 1225, 366]
+      ZOrder		      43
+      BackgroundColor	      "magenta"
+      SystemSampleTime	      "1"
+      RequestExecContextInheritance off
+      System {
+	Name			"Sensor Noise"
+	Location		[1376, 23, 2816, 830]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "glucose_in"
+	  SID			  "76"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  MATLABFcn
+	  Name			  "Call the noise function"
+	  SID			  "187"
+	  Ports			  [1, 1]
+	  Position		  [215, 95, 285, 125]
+	  ZOrder		  26
+	  MATLABFcn		  "noiseFunction(u(1))"
+	  OutputDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "glucose_out"
+	  SID			  "77"
+	  Position		  [360, 103, 390, 117]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "glucose_in"
+	  SrcPort		  1
+	  DstBlock		  "Call the noise function"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Call the noise function"
+	  SrcPort		  1
+	  DstBlock		  "glucose_out"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "189"
+	  Name			  "This subsystem calls a function which can add noise to the sensor data.\nSimulates noisy sensors and sens"
+	  "or attenuation."
+	  Position		  [91, 57, 409, 79]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  off
+	  FixedWidth		  off
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "True g"
+      SID		      "201"
+      Ports		      [1]
+      Position		      [1155, 269, 1185, 301]
+      ZOrder		      63
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [1, 72, 1441, 829]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      YMin		      "0"
+      YMax		      "100"
+      SaveName		      "ScopeData1"
+      LimitDataPoints	      off
+      ScrollMode	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "ug"
+      SID		      "200"
+      Ports		      [1]
+      Position		      [985, 269, 1015, 301]
+      ZOrder		      62
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [114, 86, 697, 659]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.501960784313725 0.501960784313725 0.501960784313725]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      LimitDataPoints	      off
+      ScrollMode	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "ui"
+      SID		      "203"
+      Ports		      [1]
+      Position		      [985, 414, 1015, 446]
+      ZOrder		      65
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [821, 451, 1430, 806]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      SaveName		      "ScopeData3"
+      LimitDataPoints	      off
+      ScrollMode	      off
+    }
+    Line {
+      ZOrder		      23
+      SrcBlock		      "Meal Data Generator"
+      SrcPort		      1
+      Points		      [41, 0]
+      Branch {
+	ZOrder			280
+	Points			[0, -165]
+	DstBlock		"Meal Data"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			47
+	DstBlock		"Demux"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      27
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      Points		      [36, 0]
+      Branch {
+	ZOrder			39
+	Points			[0, -105]
+	DstBlock		"Person Data"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			38
+	DstBlock		"Meal Data Generator"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      200
+      SrcBlock		      "Random Gender"
+      SrcPort		      1
+      DstBlock		      "Abs"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      33
+      SrcBlock		      "Add"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      34
+      SrcBlock		      "Random Age"
+      SrcPort		      1
+      Points		      [15, 0; 0, 20]
+      DstBlock		      "Add"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      35
+      SrcBlock		      "Min Age"
+      SrcPort		      1
+      Points		      [40, 0; 0, -30]
+      DstBlock		      "Add"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      37
+      SrcBlock		      "Random BMI"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      74
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [84, 0]
+      Branch {
+	ZOrder			424
+	Points			[0, 315]
+	DstBlock		"Mux2"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			423
+	DstBlock		"Meal Glucos Appearing in the Blood"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      75
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      DstBlock		      "Meal Glucos Appearing in the Blood"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      76
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      Points		      [54, 0]
+      Branch {
+	ZOrder			426
+	Points			[0, 255]
+	DstBlock		"Mux2"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			425
+	DstBlock		"Meal Glucos Appearing in the Blood"
+	DstPort			3
+      }
+    }
+    Line {
+      ZOrder		      77
+      SrcBlock		      "Demux"
+      SrcPort		      4
+      DstBlock		      "Meal Glucos Appearing in the Blood"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      78
+      SrcBlock		      "Demux"
+      SrcPort		      5
+      Points		      [22, 0]
+      Branch {
+	ZOrder			428
+	Points			[0, 195]
+	DstBlock		"Mux2"
+	DstPort			3
+      }
+      Branch {
+	ZOrder			427
+	DstBlock		"Meal Glucos Appearing in the Blood"
+	DstPort			5
+      }
+    }
+    Line {
+      ZOrder		      79
+      SrcBlock		      "Demux"
+      SrcPort		      6
+      DstBlock		      "Meal Glucos Appearing in the Blood"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      81
+      SrcBlock		      "Meal Glucos Appearing in the Blood"
+      SrcPort		      1
+      Points		      [40, 0]
+      Branch {
+	ZOrder			275
+	DstBlock		"Ins-Glu Response\nBergman Minimal Model"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			203
+	Points			[0, -50]
+	Branch {
+	  ZOrder		  460
+	  Points		  [0, -35; 519, 0; 0, 135]
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  459
+	  DstBlock		  "ug"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      ZOrder		      238
+      SrcBlock		      "Artificial Pancreas"
+      SrcPort		      1
+      Points		      [24, 0]
+      Branch {
+	ZOrder			484
+	Points			[0, 91; -520, 0; 0, -171]
+	Branch {
+	  ZOrder		  383
+	  Points		  [0, -75]
+	  DstBlock		  "Ins-Glu Response\nBergman Minimal Model"
+	  DstPort		  2
+	}
+	Branch {
+	  ZOrder		  353
+	  DstBlock		  "ui"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	ZOrder			433
+	Points			[0, -35]
+	DstBlock		"Mux1"
+	DstPort			3
+      }
+    }
+    Line {
+      ZOrder		      82
+      SrcBlock		      "Ins-Glu Response\nBergman Minimal Model"
+      SrcPort		      1
+      Points		      [23, 0]
+      Branch {
+	ZOrder			331
+	Points			[0, -60]
+	DstBlock		"True g"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			162
+	DstBlock		"Sensor Noise"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      80
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      Points		      [422, 0]
+      Branch {
+	ZOrder			432
+	Points			[0, -55]
+	DstBlock		"Meal Glucos Appearing in the Blood"
+	DstPort			7
+      }
+      Branch {
+	ZOrder			284
+	DstBlock		"Artificial Pancreas"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      201
+      SrcBlock		      "Abs"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      83
+      SrcBlock		      "Sensor Noise"
+      SrcPort		      1
+      Points		      [28, 0]
+      Branch {
+	ZOrder			482
+	DstBlock		"Noisy g readback"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			398
+	Points			[0, -60]
+	DstBlock		"Noisy g"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			382
+	Points			[0, 85]
+	Branch {
+	  ZOrder		  397
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Branch {
+	  ZOrder		  393
+	  Points		  [0, 40]
+	  DstBlock		  "Artificial Pancreas"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      ZOrder		      392
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Glucose Data File"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      418
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "Artificial Pancreas"
+      DstPort		      3
+    }
+    Annotation {
+      SID		      "291"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-size:18pt;\">Artificial Pancreas Simulator</span></p></body></html>"
+      Position		      [617, 68, 843, 88]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "281"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-family:'Bradley Hand'; font-size:36pt; font-weight:600;\">William Michael Mortl</sp"
+      "an></p></body></html>"
+      Position		      [552, 20, 928, 67]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      on
+      FixedWidth	      on
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+      ZOrder		      -2
+    }
+    Annotation {
+      SID		      "207"
+      Name		      "U/L"
+      Position		      [1419, 463, 1436, 475]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "206"
+      Name		      "mmol/L"
+      Position		      [1410, 414, 1444, 426]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -2
+    }
+    Annotation {
+      SID		      "205"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-size:20pt; color:#ff0000;\">Before using the simulator you must run simulator_setup"
+      ".m</span></p></body></html>"
+      Position		      [1035, 113, 1558, 135]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "195"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-size:10px; text-decoration: underline;\">Color Codes:</span></p>\n<p style=\"-qt-pa"
+      "ragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; te"
+      "xt-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -"
+      "qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weight:600;\">BLUE</span><span style=\""
+      " font-size:10px;\"> - executed only once per simulation</span></p>\n<p style=\" margin-top:0px; margin-bottom:0p"
+      "x; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font"
+      "-weight:600;\">GREEN</span><span style=\" font-size:10px;\"> - executed every 1440 ticks (minutes)</span></p>\n<"
+      "p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent"
+      ":0px;\"><span style=\" font-size:10px; font-weight:600;\">MAGENTA</span><span style=\" font-size:10px;\"> - exec"
+      "uted every tick (minute)</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-righ"
+      "t:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weight:600;\">YELLOW</span><sp"
+      "an style=\" font-size:10px;\"> - display, graphs, and file i/o</span></p></body></html>"
+      Position		      [1035, 169, 1241, 231]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "194"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-size:10px;\">Configuration of the simulator is accomplished via altering constants "
+      "in simulator_setup.m </span></p></body></html>"
+      Position		      [1035, 144, 1435, 156]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+      ZOrder		      -2
+    }
+    Annotation {
+      SID		      "190"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-size:10px; text-decoration: underline;\">Rows:</span></p>\n<p style=\"-qt-paragraph"
+      "-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inde"
+      "nt:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-bloc"
+      "k-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weight:600;\">1</span><span style=\" font-siz"
+      "e:10px;\"> - Gender (0-M, 1-F)</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
+      "n-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weight:600;\">2</span><s"
+      "pan style=\" font-size:10px;\"> - Age</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px"
+      "; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px; font-weight:600;\">3</"
+      "span><span style=\" font-size:10px;\">- BMI</span></p></body></html>"
+      Position		      [330, 108, 426, 160]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "96"
+      Name		      "This is the call to the NHanes \ngenerative model"
+      Position		      [303, 348, 437, 370]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "94"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-size:10px; text-decoration: underline;\">Columns:</span><span style=\" font-size:10"
+      "px;\"> </span><span style=\" font-size:10px; font-weight:600;\">1</span><span style=\" font-size:10px;\">- Bkfst"
+      " Time, </span><span style=\" font-size:10px; font-weight:600;\">2</span><span style=\" font-size:10px;\"> - Bkfs"
+      "t Carbs, </span><span style=\" font-size:10px; font-weight:600;\">3</span><span style=\" font-size:10px;\"> - Lu"
+      "nch Time, </span><span style=\" font-size:10px; font-weight:600;\">4</span><span style=\" font-size:10px;\"> - L"
+      "unch Carbs, </span><span style=\" font-size:10px; font-weight:600;\">5</span><span style=\" font-size:10px;\"> -"
+      " Dinner Time, </span><span style=\" font-size:10px; font-weight:600;\">6</span><span style=\" font-size:10px;\">"
+      " - Dinner Carbs</span></p></body></html>"
+      Position		      [501, 113, 978, 125]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      Interpreter	      "rich"
+      ZOrder		      -3
+    }
+    Annotation {
+      SID		      "93"
+      Name		      "1 tick is 1 minute\n1440 minutes in 1 day"
+      Position		      [20, 529, 119, 551]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      off
+      FixedWidth	      off
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -4
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000001
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "simulator"
+    created		    "08-Dec-2014 14:57:31"
+    isLibrary		    0
+    firstTarget		    2
+    sfVersion		    80000001
+  }
+  target {
+    id			    2
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
