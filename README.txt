@@ -1,7 +1,20 @@
 NHANES Meal Generator & Artificial Pancreas Simulator
+
 by William Mortl
+http://www.williammortl.com
+(c)2015
+
+NHANES: http://www.cdc.gov/nchs/nhanes.htm
+
+Written in Simulink / Matlab
+There is no warranty implied with this code, and it is not to be used for commercial purposes without proper recompence. Educational use is fine as long as appropriate citation is given.
 
 
+
+Notes:
+------
+
+This document outlines how to use this code, and what files are generated.
 
 / Introduction
 
